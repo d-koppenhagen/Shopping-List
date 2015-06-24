@@ -1,0 +1,13 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "a simple image shopping list based on nodejs",
+  "main": "server.js",
+  "author": "Danny Koppenhagen",
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "mongoose": "*"
+  }
+}

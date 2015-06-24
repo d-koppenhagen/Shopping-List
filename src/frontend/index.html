@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="shoppingList" lang="de">
+
+<head>
+  <title>Shopping-List</title>
+
+
+  <!--  ##############  Meta Tags ############## -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- used to start like an app with google chrome on android: -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!--  ##############  End: Meta Tags ############## -->
+
+
+  <!--  ##############  Stylesheets ############## -->
+  <!-- Favicon -->
+  <link rel="icon" href="img/fav.png" />
+  <link rel="apple-touch-icon" href="img/favWhiteBG.png">
+  <link rel="apple-touch-startup-image" href="img/favWhiteBG.png">
+
+  <!-- Vendor Stylesheets: -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" rel="stylesheet" >
+  <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css" rel="stylesheet">
+
+  <!-- personal stylesheets -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!--  ##############  End: Stylesheets ############## -->
+</head>
+
+<body>
+  <div  ng-include="'templates/shopping.html'" class="container-fluid"></div>
+
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
+
+  <!-- Angular Material Dependencies -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-animate.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-aria.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/i18n/angular-locale_de-de.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"></script>
+
+  <!-- personal angular modules -->
+  <script src="js/shoppingList.module.js"></script>
+  <script src="js/shopping.controller.js"></script>
+</body>
+
+</html>

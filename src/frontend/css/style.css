@@ -1,0 +1,7 @@
+body{
+    padding-top: 15px;
+}
+
+[class^=mdi-], [class*=mdi-] {
+  font: normal normal normal 14px/1 'Material-Design-Icons';
+}
