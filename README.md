@@ -42,3 +42,72 @@ This is a simple shopping list based on mongodb, angularJS and nodeJS
 
 ## How it looks like?
 - a preview of the project is available on: http://shop.d-koppenhagen.de/
+
+## API Methods
+
+
+### GET (all items)
+
+Request: `http://domain/list/`
+
+Response:
+```
+{
+    "checked" : <String>,
+    "name" : <String>,
+    "quantity" : <String>,
+    "_id" : <String>
+}
+```
+### GET (specific item)
+
+Request: `http://domain/list/:id/`
+
+Response:
+```
+{
+    "checked" : <String>,
+    "name" : <String>,
+    "quantity" : <String>,
+    "_id" : <String>
+}
+```
+### POST
+
+Request: `http://domain/list/`
+
+HTTP-Body:
+```
+{
+    "checked" : <String>,
+    "name" : <String>,
+    "quantity" : <String>    
+}
+```
+Response: `<"success"|"error">`
+
+### PUT
+
+Request: `http://domain/list/:id`
+
+HTTP-Body:
+```
+{
+    "checked" : <String>,
+    "name" : <String>,
+    "quantity" : <String>    
+}
+```
+Response: `<"success"|"error">`
+
+### DELETE (specific item)
+
+Request: `http://domain/list/:id`
+
+Response: `<"success"|"error">`
+
+### DELETE (all items)
+
+Request: `http://domain/list/`
+
+Response: `<"success"|"error">`
